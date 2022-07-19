@@ -1,9 +1,27 @@
-import HeaderStyle from "./Header.style"
+import HeaderStyle, {
+  Button,
+  FoodInput,
+  FormContainer,
+  HeaderContainer,
+  MainHeader,
+  Select,
+} from "./Header.style";
 
-const Header = () => {
+const Header = ({ setQuery }) => {
   return (
-    <div>Header</div>
-  )
-}
+    <HeaderContainer>
+      <MainHeader>Recipe App</MainHeader>
+      <FormContainer>
+        <FoodInput
+          type="text"
+          placeholder="search"
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <Button type="submit">SEARCH</Button>
+        <Select name="mealType" id="mealType"></Select>
+      </FormContainer>
+    </HeaderContainer>
+  );
+};
 
-export default Header
+export default Header;
