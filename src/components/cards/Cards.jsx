@@ -1,8 +1,16 @@
-import CardsStyle from "./Cards.style";
+import CardsStyle, { Card, MainContainer,Header } from "./Cards.style";
 
-const Cards = () => {
+const Cards = ({recipes}) => {
   return (
-    <div>Cards</div>
+    <div>
+      <MainContainer wrap="wrap">
+        {recipes.map(({recipe},index)=>(
+        <Card key="index">
+          <Header>{recipe.label} </Header> 
+          </Card>))}
+
+      </MainContainer>
+    </div>
   )
 }
 
