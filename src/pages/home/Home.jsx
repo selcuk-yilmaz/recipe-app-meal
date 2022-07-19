@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import Cards from "../../components/cards/Cards";
 import Header from "../../components/header/Header";
 import { ImgDiv, HomeImg, HeaderText } from "./Home.style";

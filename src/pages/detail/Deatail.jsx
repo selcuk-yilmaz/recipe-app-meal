@@ -6,12 +6,15 @@ import {
   ImgContainer,
   OtherPart,
   IngContainer,
+  Button,
 } from "./Detail.style";
 import { useLocation } from "react-router-dom";
 import dietSvg from "../../assets/diet.svg";
 import defaultImage from "../../assets/default-image.jpg";
+import { useNavigate } from "react-router-dom";
 const Detail = () => {
   const { state } = useLocation();
+   const navigate = useNavigate();
 
   return (
     <DetailContainer>
@@ -64,6 +67,7 @@ const Detail = () => {
               <br />
             </div>
           ))}
+          <Button onClick={() => navigate(-1)}>Go Back</Button>
         </IngContainer>
       </DetailPart>
     </DetailContainer>
