@@ -15,3 +15,5 @@
  * Async Await
 
 ## How does my project look
+
+![recipe-app-meal](https://user-images.githubusercontent.com/99830247/183442573-ca6cbcd9-7a7c-4fa7-b963-d6a216c29412.gif)
